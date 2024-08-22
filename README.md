@@ -37,11 +37,56 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
+# Dataset:
+```
+import pandas as pd                                                
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+df=pd.read_csv("/content/Churn_Modelling (2).csv")         
+df.head()
+```
+# Null Values:
+```
+df.isnull().sum()
+df.duplicated().sum()
+```
+# Normalized Data:
+```
+df=df.drop(['Surname', 'Geography','Gender'], axis=1)
+scaler=StandardScaler()                                             
+df=pd.DataFrame(scaler.fit_transform(df))
+df.head()
+```
+# Data Splitting:
+```
+X,Y=df.iloc[:,:-1].values ,df.iloc[:,-1].values                     
+print('Input:\n',X,'\nOutput:\n',Y)
+```
+# Train and Test Data
 
+```
+Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.2)
+print("Xtrain:\n" ,Xtrain, "\nXtest:\n", Xtest)                     
+print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)
+```
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+# Dataset:
+![Screenshot 2024-08-22 134000](https://github.com/user-attachments/assets/132d25ae-b204-43b1-ae3a-61a8c5867f0a)
+
+# Null Values:
+![Screenshot 2024-08-22 134009](https://github.com/user-attachments/assets/a941c085-5ed3-4017-9c93-e34008591593)
+
+# Normalized Data:
+![Screenshot 2024-08-22 134016](https://github.com/user-attachments/assets/ca6ca18e-4750-4ad5-949b-5bd3239be892)
+
+# Data Splitting:
+![Screenshot 2024-08-22 134023](https://github.com/user-attachments/assets/d9fc15b1-a437-438d-8967-6557e76e6702)
+
+# Train and Test Data
+![Screenshot 2024-08-22 134046](https://github.com/user-attachments/assets/9eb813e4-097d-4208-b9ae-81c3c8b77bb8)
 
 
 ## RESULT:
