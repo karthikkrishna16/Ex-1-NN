@@ -1,7 +1,7 @@
 <H3>ENTER YOUR NAME</H3> TH KARTHIK KRISHNA
-<H3>ENTER YOUR REGISTER NO.</H3> 212223040177
+<H3>ENTER YOUR REGISTER NO.</H3> 212223240067
 <H3>EX. NO.1</H3>
-<H3>DATE</H3>22/08/2024
+<H3>DATE</H3> 22/08/2024
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -37,9 +37,8 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-# Dataset:
-```
-import pandas as pd                                                
+# Data set
+```import pandas as pd                                                
 import io
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
@@ -65,31 +64,38 @@ X,Y=df.iloc[:,:-1].values ,df.iloc[:,-1].values
 print('Input:\n',X,'\nOutput:\n',Y)
 ```
 # Train and Test Data
-
 ```
 Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.2)
 print("Xtrain:\n" ,Xtrain, "\nXtest:\n", Xtest)                     
 print("\nYtrain:\n" ,Ytrain, "\nYtest:\n", Ytest)
 ```
-
-## OUTPUT:
+# OUTPUT:
 # Dataset:
-![Screenshot 2024-08-22 134000](https://github.com/user-attachments/assets/132d25ae-b204-43b1-ae3a-61a8c5867f0a)
+
+![Screenshot 2024-08-23 095158](https://github.com/user-attachments/assets/1c52d3fc-3aa1-4e66-b727-22f28d53af37)
 
 # Null Values:
-![Screenshot 2024-08-22 134009](https://github.com/user-attachments/assets/a941c085-5ed3-4017-9c93-e34008591593)
+
+![Screenshot 2024-08-23 095241](https://github.com/user-attachments/assets/e7378916-e60d-46eb-bea8-b0980cbf194f)
 
 # Normalized Data:
-![Screenshot 2024-08-22 134016](https://github.com/user-attachments/assets/ca6ca18e-4750-4ad5-949b-5bd3239be892)
+
+![Screenshot 2024-08-23 110145](https://github.com/user-attachments/assets/3cb3e699-7aea-4cef-990e-da9b07d43505)
 
 # Data Splitting:
-![Screenshot 2024-08-22 134023](https://github.com/user-attachments/assets/d9fc15b1-a437-438d-8967-6557e76e6702)
 
-# Train and Test Data
-![Screenshot 2024-08-22 134046](https://github.com/user-attachments/assets/9eb813e4-097d-4208-b9ae-81c3c8b77bb8)
+![Screenshot 2024-08-23 110226](https://github.com/user-attachments/assets/a6b02b84-0a61-4fd9-9df2-307362cd7e98)
+
+# Train and Test Data:
+
+![Screenshot 2024-08-23 110257](https://github.com/user-attachments/assets/f4e7ebda-33a5-45b1-9abf-7e439262d509)
 
 
-## RESULT:
-Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
+
+
+
+
+# RESULT:
+Thus, Implementation of Data Preprocessing is done in python using a data set downloaded from Kaggle.
 
 
